@@ -20,11 +20,11 @@ class CreateProductsTable extends Migration
             $table->string("name");
             $table->string("productdescription");
             $table->string("stock");
-            $table->string("price");
-            $table->string("offerprice");
+            $table->integer("price");
+            $table->integer("offerprice");
             $table->string("delivery");
-            $table->string("deliverycharge");
-            $table->string("totalprice");
+            $table->integer("deliverycharge");
+            $table->integer("totalprice");
             $table->string("gallery");
 
 

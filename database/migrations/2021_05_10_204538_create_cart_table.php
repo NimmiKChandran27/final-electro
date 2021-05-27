@@ -17,7 +17,6 @@ class CreateCartTable extends Migration
             $table->id();
             $table->integer('product_id')->unique();
             $table->integer('user_id')->unique();
-            $table->integer('qty');
             $table->date('date_of_purchase');
             $table->timestamps();
         });

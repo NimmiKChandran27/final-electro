@@ -22,7 +22,7 @@
       </tr>
       <tr>
         <td>TOTAL AMOUNT:</td>
-        <td>$ {{$total+1000}}</td>
+        <td>$ {{$total}}</td>
         
       </tr>
     </tbody>

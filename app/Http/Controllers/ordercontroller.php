@@ -9,7 +9,7 @@ use App\Models\cart;
 use Illuminate\Support\Facades\DB;
 class ordercontroller extends Controller
 {
-    function delete($id)
+    function delete1($id)
     {
         $data=order::find($id);
         $data->delete();

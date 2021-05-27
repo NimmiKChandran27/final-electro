@@ -25,9 +25,9 @@ Route::get('/logout', function () {
     return redirect('login');
 });
 Route::view('/register','register');
-Route::post("/login",[usercontroller::class,'login']);
+Route::post('/login',[usercontroller::class,'login']);
 Route::post("/register",[usercontroller::class,'register']);
-Route::get("/",[productcontroller::class,'index']);
+Route::get('/',[productcontroller::class,'index']);
 Route::get("detail/{id}",[productcontroller::class,'detail']);
 Route::get("search",[productcontroller::class,'search']);
 Route::post("add_to_cart",[productcontroller::class,'addtocart']);
@@ -50,7 +50,7 @@ Route::get('/adminlogin', function () {
 });
 
 Route::get('/adminlogout', function () {
-    Session::forget('user');  
+    Session::forget('admin');  
     return redirect('login');
 });
 
@@ -58,6 +58,6 @@ Route::post("/adminlogin",[usercontroller::class,'adminlogin']);
 
 
 Route::get('editcustomer',[ordercontroller::class,'show']);
-Route::get('delete/{id}',[ordercontroller::class,'delete']);
+Route::get('delete1/{id}',[ordercontroller::class,'delete1']);
 Route::get('edit1/{id}',[ordercontroller::class,'showdata']);
 Route::post('edit1/',[ordercontroller::class,'update']);

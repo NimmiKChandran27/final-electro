@@ -38,11 +38,13 @@
   </button>
 </div>
 </a>
+</div>
 <br>
 <marquee behavior="scroll" direction="left"><font size="10"
-          face="Ariel"
-          color="blue">Get the latest and smart laptopa and mobile with greatest quality at affordable prices all under one roof!Register soon to witness the TRENDIEST sale online with flat 50% off for new customers!HURRY UP!!</font></marquee>
+          face="Arial"
+          color="blue">Get the latest and smartest laptops and mobile with greatest quality at affordable prices all under one roof!Register soon to witness the TRENDIEST sale online with flat 50% off for new customers!HURRY UP!!</font></marquee>
 <br>
+
 <div class="trending-wrapper">
 <h3>TRENDING PRODUCTS</h3>
 @foreach($products as $item)
@@ -50,8 +52,8 @@
 <a href="detail/{{$item['id']}}">
 <img class="trending-image" src="{{$item['gallery']}}">
 <div class="">
-<h3><font size="5"
-          face="Courier New"
+<h3><font size="2"
+          face="arial"
           color="black"><b>{{$item['name']}}</b></font></h3>
 </div>
 </a>

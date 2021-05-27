@@ -21,7 +21,7 @@
 </div>
 </div>
 <div class="col-sm-3">
-<a href="/removecart/{{$item->cart_id}}" class="btn btn-warning"> REMOVE FROM CART</a>
+<a href="/removecart/{{$item->cart_id}}" class="btn btn-warning" onclick="return confirm('Are you sure?')"> REMOVE FROM CART</a>
 </div>
 <div class="col-sm-3">
 <a href="detail/{{$item->id}}">
@@ -32,7 +32,7 @@
 @endforeach
 </div>
 <right>
-<a  class="btn btn-success" href="ordernow">Order Now</a><br><br>
+<a  class="btn btn-success" >Order Now</a><br><br>
 </div>
 </div>
 @endsection

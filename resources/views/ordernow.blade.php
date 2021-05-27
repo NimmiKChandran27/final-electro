@@ -17,13 +17,12 @@
       </tr>
       <tr>
         <td>Delivery</td>
-        
-        <td></td>
+        <td>$1000</td>
         
       </tr>
       <tr>
         <td>TOTAL AMOUNT:</td>
-        <td>$ {{$total+10}}</td>
+        <td>$ {{$total+1000}}</td>
         
       </tr>
     </tbody>
@@ -32,17 +31,18 @@
   <form action="/orderplace" method="POST">
   @csrf
   <div class="form-group">
-    <textarea name="address" placeholder="enter your address" class="form-control" id="validationCustom01" value="enter your address" required ></textarea>
+    <textarea name="address" id="validationCustom01" placeholder="enter your address" class="form-control" id="validationCustom01" value="enter your address" required ></textarea>
   </div>
   <br>
   <div class="form-group">
-    <label for="pwd">Payement Method</label>
+    <label for="pwd">Payment Method</label>
     <br><br>
-    <input type="radio" value="cash"  name="payment"><span> Online Payment</span><br><br>
-    <input type="radio"  value="cash"  name="payment"><span>EMI Payment</span><br><br>
-    <input type="radio" value="cash" name="payment"><span>Payment on delivery</span><br><br>
+    <input type="radio" value="cash" id="validationCustom01" name="payment" required><span> Online Payment</span><br><br>
+    <input type="radio"  value="cash" id="validationCustom01" name="payment" required><span>EMI Payment</span><br><br>
+    <input type="radio" value="cash" id="validationCustom01" name="payment" required><span>Payment on delivery</span><br><br>
   </div>
-  <button type="submit" class="btn btn-success">ORDER NOW</button>
+  <button type="submit" class="btn btn-success" 
+  >ORDER NOW</button>
 </form> 
   </div>
 </div>

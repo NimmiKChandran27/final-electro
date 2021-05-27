@@ -20,13 +20,7 @@ class userauth
         {
             return redirect('/');
         }
-        else
-        {
-            if($request->path()=="login" && $request->session()->has('admin'))  
-            {
-                return redirect('list');
-            }
-        }
+        
         return $next($request);
     }
 }

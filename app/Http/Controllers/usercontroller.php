@@ -18,6 +18,7 @@ class usercontroller extends Controller
     
     
                 return" Username or Password incorrect";
+                
     
             }
           
@@ -55,7 +56,7 @@ function adminlogin(Request $req)
         { 
             
     
-                return" Username or Password incorrect";
+                return" ONLY ADMIN CAN LOGIN IN";
     
             }
           

@@ -143,7 +143,8 @@ class productcontroller extends Controller
         $product->totalprice=$req->tprice;
         $product->gallery=$req->gallery;
         $product->save();
-        return "PRODUCT SUCCESFULLY ADDED";
+      //  return "PRODUCT SUCCESFULLY ADDED";
+        return redirect('list');
 
     }
 

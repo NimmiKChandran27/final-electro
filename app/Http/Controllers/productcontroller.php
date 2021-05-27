@@ -9,6 +9,7 @@ use App\Models\product;
 use App\Models\cart;
 use App\Models\order;
 use Session;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 class productcontroller extends Controller
 {
@@ -34,12 +35,20 @@ class productcontroller extends Controller
 
     function addtocart(Request $req )
     {
+
+        $getcurrent_date_time = Carbon::now()->toDateTimeString();
+
+
         if($req->session()->has('user'))
         {
 
         $cart= new cart;
         $cart->product_id=$req->product_id;
         $cart->user_id=$req->session()->get('user')['id'];
+        $cart->date_of_purchase=$getcurrent_date_time;
+       
+
+        
         $cart->save();
         return redirect('/');
         }

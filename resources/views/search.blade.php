@@ -6,7 +6,7 @@
 </div>
 <div class="col=sm-4">
 <div class="trending-wrapper">
-<font size="7"
+<font size="10"
           face="Candara"
           color="black">
 Results

@@ -12,24 +12,24 @@
 <h1>Product List</h1><br>
 
 
-<a class="btn btn-secondary" href="/add">ADD PRODUCT</a><br><br><br><br>
-<a class="btn btn-secondary" href="/editcustomer">EDIT ORDER DETAILS</a><br><br><br><br>
-<a class="btn btn-secondary" href="/logout">GO BACK</a><br><br><br><br>
-<table class="table" border="3">
+<a class="btn btn-outline-success" href="/add">ADD PRODUCT</a><br><br><br><br>
+<a class="btn btn-outline-success" href="/editcustomer">EDIT ORDER DETAILS</a><br><br><br><br>
+<a class="btn btn-outline-success" href="/logout">GO BACK</a><br><br><br><br>
+<table class="table table-striped table-hover">
 <tr>
-<td>Product Id</td>
-<td>Product Type</td>
-<td>Name</td>
-<td>Product Description</td>
-<td>Stock</td>
-<td>Price</td>
-<td>Offer Price</td>
-<td>Delivery</td>
-<td>Delivery Charge</td>
-<td>Total Price</td>
-<td>Gallery</td>
-<td>DELETE</td>
-<td>EDIT</td>
+<td><b>Product Id</b></td>
+<td><b>Product Type</b></td>
+<td><b>Name</b></td>
+<td><b>Product Description</b></td>
+<td><b>Stock</b></td>
+<td><b>Price</b></td>
+<td><b>Offer Price</b></td>
+<td><b>Delivery</b></td>
+<td><b>Delivery Charge</b></td>
+<td><b>Total Price</b></td>
+<td><b>Gallery</b></td>
+<td><b>DELETE</b></td>
+<td><b>EDIT</b></td>
 </tr>
 @foreach($products as $product) 
 <tr>

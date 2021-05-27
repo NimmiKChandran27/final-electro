@@ -1,9 +1,25 @@
 @extends('master')
 @section("content")
+
+
+<div class="hiji">
+<div class="row">
+<div class="col-sm-4 col-sm-4">
+<center>
+<img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHh0Jf_hdIGLA/company-logo_200_200/0/1519883828213?e=2159024400&v=beta&t=Eqbl-mTA7jAcrdl8KOvt5SmIHVzZDkiVhDPpx3vVi_E">
+</div>
+</div>
+</div>
+</center>
+
+
 <div class="container custom-login">
 <div class="row">
-<div class="col-sm-4 col-sm-offest-4">
+<div class="col-sm-4 col-sm-4">
 <form action="/login" method="POST">
+
+<fieldset>
+  <legend>USER LOGIN</legend>
 
   <div class="form-group">
   @csrf
@@ -23,8 +39,11 @@
   <a href="/register">Don't have a account? Sign up!</label></a><br>
   <a href="/adminlogin">If  only <i>ADMINISTRATOR<i> click here!</label></a>
 </form>
+</fieldset>
 </div>
 </div>
 </div>
+
+
 
 @endsection

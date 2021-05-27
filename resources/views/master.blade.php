@@ -26,6 +26,7 @@
 {
     height: 500px;
     padding-top: 100 px;
+    
 }
 
 .img.slider-img{
@@ -72,10 +73,23 @@
 .cart-list-divider
 {
 border-bottom: 1px solid #ccc;
-margin-bottom: 20px;
-padding-bottom: 20px;
+margin-bottom: 10px;
+padding-bottom: 10px;
 }
 
+fieldset {
+  background-color:#EBF5FB;
+}
+
+legend {
+  background-color: #189AB4;
+  color: white;
+  padding: 5px 15px;
+}
+
+input {
+  margin: 1px;
+}
 
 </style>
 </html>

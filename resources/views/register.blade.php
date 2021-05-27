@@ -1,12 +1,15 @@
 @extends('master')
 @section("content")
 
+
+
 <div class="container custom-login">
 <div class="row">
 <div class="col-sm-4 col-sm-offest-4">
 <form action="register" method="POST">
+<fieldset>
+  <legend>REGISTER</legend>
 @csrf
-<h5> REGISTER </h5>
   <div class="form-group">
     <label for="validationCustom02" class="form-label">Email address</label>
     <input type="email" name="email" class="form-control" id="validationCustom02" aria-describedby="emailHelp" placeholder="Email" required>
@@ -28,7 +31,7 @@
   
  
 
-
+ </fieldset>
 
 </form>
 

@@ -13,7 +13,7 @@
 <h1>Order List</h1><br>
 
 <a class="btn btn-dark" href="/list">GO BACK</a><br><br><br><br>
-<table class="table" border="3">
+<table class="table table-success table-striped">
 <tr>
 <td>Product Id</td>
 <td>User Id</td>

@@ -32,7 +32,7 @@
 @endforeach
 </div>
 <right>
-<a  class="btn btn-success" >Order Now</a><br><br>
+
 </div>
 </div>
 @endsection

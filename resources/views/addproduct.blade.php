@@ -7,10 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body  style="background-color:lightblue;">
 <center>
-<h1>ADD PRODUCT</h1>
+<legend>ADD PRODUCT</legend>
 <form action="add" method="POST">
+
+<fieldset>
 @csrf
 <input type="text" id="validationCustom01"  name="ptype" placeholder="PRODUCT TYPE(1/2)"  required><br><br>
 <input type="text" id="validationCustom01"  name="name" placeholder="PRODUCT NAME" required><br><br>
@@ -22,7 +24,7 @@
 <input type="text" id="validationCustom01" name="dyn" step="any" placeholder="DELIVERY CHARGE(IF APPLICABLE)" required><br><br>
 <input type="text" id="validationCustom01" name="tprice" placeholder="TOTAL PRICE" required><br><br>
 <input type="text"  id="validationCustom01" name="gallery" placeholder="GALLERY" required><br><br>
-<button type="Submitt" onclick="return confirm('New product added...')">ADD PRODUCT</button>
+<button type="Submitt" class="btn btn-outline-primary" onclick="return confirm('New product added...')">ADD PRODUCT</button>
 </form>
 </center>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

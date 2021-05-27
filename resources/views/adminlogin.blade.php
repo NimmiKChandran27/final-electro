@@ -5,6 +5,8 @@
 <div class="col-sm-4 col-sm-offest-4">
 <form action="/adminlogin" method="POST">
 
+<fieldset>
+  <legend>ADMIN LOGIN</legend>
   <div class="form-group">
   @csrf
     <label for="validationCustom01" class="form-label">Email address</label>
@@ -23,6 +25,7 @@
   <a class="btn btn-success" href="/login">BACK TO USER LOGIN</a><br><br><br><br>
  
 </form>
+</fieldset>
 </div>
 </div>
 </div>
